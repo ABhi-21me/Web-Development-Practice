@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevConnect</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f3f7;
+            color: #333;
+        }
+
+        nav {
+            background-color: #17203d;
+            color: white;
+            padding: 17px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            margin: 0;
+        }
+
+        nav p {
+            margin: 0;
+            color: #c8cbd6;
+            font-size: 14px;
+        }
+
+        .container {
+            width: 620px;
+            margin: 35px auto;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12);
+            position: relative;
+        }
+
+        .user {
+            margin-bottom: 12px;
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .info {
+            color: #777;
+            font-size: 13px;
+        }
+
+        .card p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #4b4b4b;
+        }
+
+        .tag {
+            position: absolute;
+            top: -13px;
+            right: 15px;
+            padding: 7px 12px;
+            border-radius: 18px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .blue {
+            background-color: #e7edff;
+            color: #4a5fa8;
+        }
+
+        .red {
+            background-color: #ffeaea;
+            color: #c25a5a;
+        }
+
+        .btn {
+            position: fixed;
+            bottom: 35px;
+            right: 40px;
+            background-color: #315fd4;
+            color: white;
+            border: none;
+            padding: 14px 22px;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:hover {
+            background-color: #244bb0;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                width: 85%;
+            }
+
+            nav {
+                padding: 17px 20px;
+            }
+
+            .btn {
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>DevConnect</h2>
+        <p>@dev_user</p>
+    </nav>
+
+    <div class="container">
+
+        <div class="card">
+            <div class="tag blue">Verified</div>
+
+            <div class="user">
+                <span class="name">Alex Rivera</span>
+                <span class="info">@alex_tech · 2h ago</span>
+            </div>
+
+            <p>
+                Finally deployed my Node.js project successfully!<br>
+                The website is now much faster after using caching. 🚀
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="tag red">Trending</div>
+
+            <div class="user">
+                <span class="name">Tech Careers India</span>
+                <span class="info">@tech_jobs · 5h ago</span>
+            </div>
+
+            <p>
+                Some important skills for developers in 2026 are<br>
+                System Design, AI tools, and good CSS fundamentals.
+            </p>
+        </div>
+
+        <div class="card">
+
+            <div class="user">
+                <span class="name">Frontend Daily</span>
+                <span class="info">@frontend_tips · 1d ago</span>
+            </div>
+
+            <p>
+                CSS Tip: An element with position absolute will look for<br>
+                the nearest parent that has position relative.
+            </p>
+        </div>
+
+    </div>
+
+    <button class="btn">Create Post</button>
+
+</body>
+</html>
